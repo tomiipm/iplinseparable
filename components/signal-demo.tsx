@@ -127,7 +127,7 @@ export function SignalDemo() {
                 <div>
                   <h3 className="text-2xl font-bold">{currentSignal.symbol}</h3>
                   <div className="flex items-center gap-2">
-                    <Badge variant={currentSignal.type === "BUY" ? "success" : "destructive"}>
+                    <Badge variant={currentSignal.type === "BUY" ? "default" : "destructive"}>
                       {currentSignal.type}
                     </Badge>
                     <span className="text-sm text-gray-400">{currentSignal.timestamp.toLocaleTimeString()}</span>
